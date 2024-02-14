@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Symbat Bekzhigit</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Reenie+Beanie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Dawning+of+a+New+Day&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+        <!-- Link to your external JavaScript file -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Symbat Bekzhigit</a>
+            <a href="#film">Film</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="mailto:sb7971@nyu.edu">Contact</a>
+        </div>
+        
+        <section id="home">
+            <div class="content">
+                <!-- <h1>the beauty of simple things</h1><br> -->
+                <p id="welcome-text"> Welcome , dear friend .<p>
+                <p id="intro-paragraph">
+                    Here, I present a glipmse of a slow day in my life at NYUAD.<br>
+                    By “slow” I mean a day when I choose to appreciate the beauty of our campus in all its form and shape. <br>
+                    Its silent beauty, when it is not crowded with students rushing from one building to another. <br>
+                    A day when I observe, notice, and reflect. <br> <br>
+                    
+                    When was the last time you stopped to appreciate the birds chipping around campus?<br>
+                    Or how the sun glistens on the highline grass after the grass has been watered?<br>
+
+                    If you do not remember it or cannot recall, watch the video below and look through my gallery of photos of our beautiful campus. <br> <br>
+                    
+                    Hope it will encourage you to be more present and appreciate the beauty of simple things. <br>
+
+                    Best, <br>
+                    Symbat
+                    </p>
+            </div>
+        </section>
+        
+        <section id="film">
+            <div class="content">
+                <h1> slow day at nyuad: a documentary</h1>
+                <!-- <video width="1000" controls autplay muted>
+                    <source src="media/SymbatBekzhigit_Video.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>           -->
+                <iframe width="1000" height="400" src="https://www.youtube.com/watch?v=2wMaPy0mdSQ&autoplay=1&mute=1"></iframe>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="content">
+                <h1>gallery of memories</h1>
+                <div class="carousel-container">
+                    <button class="carousel-arrow" id="prevBtn">&lt;</button>
+                    <div class="carousel">
+                        <!-- the links in the carousel include query parameters indicating which image was clicked-->
+                        <a href="gallery.html?image=1.jpg"><img src="media/1.jpg" alt="Photo 1"></a>
+                        <a href="gallery.html?image=2.jpg"><img src="media/2.jpg" alt="Photo 2"></a>
+                        <a href="gallery.html?image=3.jpg"><img src="media/3.jpg" alt="Photo 3"></a>
+                        <a href="gallery.html?image=5.jpg"><img src="media/5.jpg" alt="Photo 5"></a>
+                        <a href="gallery.html?image=6.jpg"><img src="media/6.jpg" alt="Photo 6"></a>
+                        <a href="gallery.html?image=7.jpg"><img src="media/7.jpg" alt="Photo 7"></a>
+                    </div>
+                    <button class="carousel-arrow" id="nextBtn">&gt;</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="about">
+            <div class="content">
+                <h1>about me</h1>
+                <div class="about-container">
+                    <img src="media/symbat.png" alt="Symbat's photo" width="200" height="200">
+                    <p>I am a third-year student at NYUAD majoring in Computer Science and minoring in Applied Mathematics and Interactive Media. Beyond my passion for tech, I am a photography enthusiast who loves traveling, filming, and documenting the things around. I also enjoy learning languages and binge-watching k-dramas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; Symbat Bekzhigit 2024</p>
+            <div class="social-icons">
+                <!-- GitHub icon linking to your GitHub profile -->
+                <a href="https://github.com/symbat-bekzhigit"><img src="media/github-icon.png" alt="GitHub"></a>
+                <!-- LinkedIn icon linking to your LinkedIn profile -->
+                <a href="https://www.linkedin.com/in/symbat-bekzhigit-1181871b4/"><img src="media/linkedin-icon.png" alt="LinkedIn"></a>
+                <!-- Email icon linking to your email address -->
+                <a href="mailto:sb7971@nyu.edu"><img src="media/email-icon.jpeg" alt="Email"></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>   
+</html>

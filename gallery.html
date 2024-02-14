@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+        <!-- Link to your external JavaScript file -->
+        <script src="js/javascript.js" defer></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html#home">Symbat Bekzhigit</a>
+            <a href="index.html#film">Film</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+        <section id="photos">
+            <div class="content">
+                <div class="photo-container">
+                    <p id="photoText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue quisque egestas diam in arcu cursus. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Cras ornare arcu dui vivamus arcu felis. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Tincidunt eget nullam non nisi est sit amet. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Nec feugiat nisl pretium fusce id velit ut tortor. Pellentesque adipiscing commodo elit at imperdiet dui accumsan. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Viverra suspendisse potenti nullam ac. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Elementum integer enim neque volutpat ac. Dui ut ornare lectus sit amet est placerat in. Risus commodo viverra maecenas accumsan lacus vel. Sed odio morbi quis commodo odio aenean sed adipiscing.
+                    </p>
+                    <img id="photoImage" src="media/1.jpg" alt="Photo 1" width="400" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; Symbat Bekzhigit 2024</p>
+            <div class="social-icons">
+                <!-- GitHub icon linking to your GitHub profile -->
+                <a href="https://github.com/symbat-bekzhigit"><img src="media/github-icon.png" alt="GitHub"></a>
+                <!-- LinkedIn icon linking to your LinkedIn profile -->
+                <a href="https://www.linkedin.com/in/symbat-bekzhigit-1181871b4/"><img src="media/linkedin-icon.png" alt="LinkedIn"></a>
+                <!-- Email icon linking to your email address -->
+                <a href="mailto:sb7971@nyu.edu"><img src="media/email-icon.jpeg" alt="Email"></a>
+            </div>
+        </footer>
+
+
+        <!-- this code will allow to read query parameters passed from index.html and display the corresponding image and text -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const image = urlParams.get('image');
+    
+                // Mapping of image filenames to corresponding texts
+                const imageTexts = {
+                    '1.jpg': 'A view from the Highline above the Arts Center.',
+                    '2.jpg': 'A flower walkway above the Arts Center.',
+                    '3.jpg': 'A plant that looks very similar to a bamboo tree (or is it bamboo lol)',
+                    '5.jpg': 'Shadows playing on the windows of the Guest Residences.',
+                    '6.jpg': 'The signature flower of our campus that smells like a soap.',
+                    '7.jpg': 'An aestehtic architecture of our campus.'
+                };
+    
+                // Update the image source
+                const photoImage = document.getElementById('photoImage');
+                photoImage.src = 'media/' + image;
+    
+                // Update the text based on the image
+                const photoText = document.getElementById('photoText');
+                photoText.textContent = imageTexts[image] || 'No description available.';
+            });
+        </script>
+    </body>
+
+</html>

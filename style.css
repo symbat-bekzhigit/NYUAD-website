@@ -1,0 +1,206 @@
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+#home p#intro-paragraph {
+    background-color: #cad1ab; /* d6dac6*/
+    padding: 20px;
+}  
+
+#home #welcome-text {
+    font-family: "Charmonman", cursive;
+    font-size: 35px;
+    
+}
+
+#intro-paragraph {
+    /* font-family: "Reenie Beanie", cursive;
+    font-family: "Dawning of a New Day", cursive; */
+    font-family: "Charmonman", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+
+}
+/* top navigation */
+.topnav {
+    background-color: #ABB485;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Set a high z-index to ensure the header is always above other elements */
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #efebe2;
+    color: black;
+}
+
+
+/* Set background image for Film section */
+
+/* 
+#film::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+#film {
+    position: relative; /* Make the section relatively positioned */
+    background-image: url('media/nyuad.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: #fff;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #efebe2;
+}
+
+.content {
+    max-width: 1000px; 
+    padding: 30px;
+}
+
+video {
+    max-width: 100%;
+}
+
+
+/* CSS for the photo carousel */
+.carousel-container {
+    position: relative;
+    max-width: 500px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.1s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+/* Hide arrows on smaller screens */
+@media (max-width: 600px) {
+    .carousel-arrow {
+        display: none;
+    }
+}
+
+
+/* About section */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    background-color: #cad1ab;
+    padding: 20px;
+}
+
+.about-container img {
+    margin-right: 50px;
+    border-radius: 8px; 
+}
+
+
+/* Gallery page */
+
+.photo-container {
+    display: flex;
+    align-items: center;
+}
+
+.photo-container img {
+    width: 500px;
+    height: auto;
+    margin-left: 50px; /* Adjust the margin as needed */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded image */
+}
+
+
+/* CSS for the footer */
+footer {
+    text-align: center; /* Center align the content */
+    padding: 1px 0 1px; /* Add some padding for spacing */
+}
+
+footer p {
+    margin-bottom: 5px; /* Add some margin below the text */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox to align icons */
+    justify-content: center; /* Center align the icons horizontally */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Add some margin between icons */
+}
+
+.social-icons img {
+    width: 30px; /* Set a fixed width for the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+h1 {
+    font-family: "Charmonman", cursive;
+    font-size: 30px;
+    padding: 0px;
+}
