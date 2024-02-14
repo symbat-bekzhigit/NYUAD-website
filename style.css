@@ -55,17 +55,6 @@ body {
 
 /* Set background image for Film section */
 
-/* 
-#film::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-} */
-
 #film {
     position: relative; /* Make the section relatively positioned */
     background-image: url('media/nyuad.png');
@@ -133,13 +122,6 @@ video {
 
 #nextBtn {
     right: 0;
-}
-
-/* Hide arrows on smaller screens */
-@media (max-width: 600px) {
-    .carousel-arrow {
-        display: none;
-    }
 }
 
 
